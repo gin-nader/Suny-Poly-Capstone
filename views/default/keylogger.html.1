@@ -1,0 +1,19 @@
+{{extend 'layout.html'}}
+<p><b>
+A drive by download is when a user will download a program thinking that it will be something
+<br>that they want, but it will end up being something malicious instead. There are a two main file
+<br>extentions that you will want to be suscpicious of when you are downloading content off of the internet.
+<br>The most common file extentions that you will find and want be wary of include .exe and .bat programs.
+<br>.exe files and .bat files can open and execute when you click on them and immediately start running in
+<br>the background without you even knowing. Make sure you know what kind of file extentsion a certain file
+<br>should have before you open it. Audio and video files should never end in .exe.
+</b></p>
+<p><b>
+You will notice an image below. It says that if you click on it, you will obtain cool stuff.
+<br>However, when you click on it it, you will automatically download a keylogger script. A keylogger
+<br>is a program that will read every keystroke you hit, and it will store it in some kind of file
+<br>that a malicious hacker can read. It will have every character that you hit, but a hacker will
+<br>will try and look for strings that look like usernames and passwords, and then they will know
+<br>your login credentials without having to brute force your password.
+</b></p>
+<a href="/imageScript/static/cool_stuff.exe.pyw" download>{{=IMG(_src=URL('static', 'images/keylogger_image.jpg'))}}</a>

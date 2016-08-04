@@ -1,0 +1,60 @@
+<div id="reset_password">
+
+    <p align="center">
+            <Strong>Please register an email and password, so that you can begin taking the survery.<br>
+               It does not have to a be a real email, and for your own sake, do not use a password that you commonly use.</Strong>
+    </p>
+
+
+{{=form.custom.begin}}
+
+  <center>  <div id="register_main">
+
+
+        <div class="form-group" id="auth_user_email__row" >
+          <strong><label class="control-label" for="auth_user_email" id="auth_user_email__label">E-mail:</label></strong>
+
+        <div style="width: 300px;" >
+            {{=form.custom.widget.email}}
+            <span class="help-block"></span>
+            <span class="help-block"></span>
+        </div>
+        </div>
+
+              <p>
+               <strong>It is a good idea to use a passphrase instead of a password.<br> For example, the passphrase "correcthorsebatterystaple"
+                compared to Tr0ub4dor&amp3.<br> Not only is the passphrasse easier to remember, but it is actually more secure.</strong>
+              </p>
+
+          <strong><label class="control-label" for="auth_user_password" id="auth_user_password__label">Password:</label></strong>
+
+        <div style="width: 300px;" >
+            {{=form.custom.widget.password}}
+              <span class="help-block"></span>
+              <span class="help-block"></span>
+
+        </div>
+
+
+              <strong><label class="control-label" for="auth_user_password_two" id="auth_user_password_two__label">Confirm Password:</label></strong>
+
+        <div style="width: 300px;" >
+            {{=form.custom.widget.password_two}}
+            <span class="help-block"></span>
+            <span class="help-block"></span>
+        </div>
+
+    </div>
+
+    <div>
+        <input class="btn btn-primary" type="submit" value="Sign Up">
+        <span class="help-block"></span>
+        <span class="help-block"></span>
+    </div>
+
+    <div class="col-3">
+        <Strong>*Notice: while this website is generous enough to not display your password in plaintext here, it does not mean that it is not being stored in plaintext in the database.<br>
+         It could aslo be stored in the database as an MD5 hash. That is almost as bad as being displayed in plaintext because MD5 can be easily cracked.<br>
+         To learn more about MD5 and how hashing functions work, click here.</Strong>
+    </div>
+</div></center>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>sample</title>
+
+{{
+
+response.files.append(URL('static','css/skeleton.css'))
+
+response.files.append(URL('static', 'css/superfish.css'))
+
+response.files.append(URL('static', 'css/custom.css'))
+
+response.files.append(URL('static', 'css/web2py­bootstrap3.css'))
+
+}}
+
+{{include 'web2py_ajax.html'}}
+
+</head>
+
+<body>
+
+<header class="container">
+
+<div class="six columns alpha">
+
+</div>
+
+</header>
+
+<h1>Web of Honey</h1>
+
+<nav class="navbar navbar­default navbar­fixed­top"
+
+role="navigation">
+
+<div class="container­fluid">
+
+toggle="collapse" data­target=".navbar­collapse">
+
+<div class="navbar­header">
+
+</div>
+
+<div class="collapse navbar­collapse navbar­ex1­collapse">
+
+auth.navbar('Welcome',mode='dropdown') or ''}}
+
+nav',li_class='dropdown',ul_class='dropdown­menu')}}
+
+</div>
+
+</div>
+
+</nav>
+
+<section id="main" class="container">
+
+<div class="flash">{{=response.flash or ''}}</div> <center>
+
+<div class="shadow2">
+
+<div style="width:800px;background­color:#0A2A22;color:white;border:5px
+
+solid #0B0B3 ;opacity:0.2;box­shadow: 10px 10px 10px #888888;">
+
+{{include}}
+
+</center></div></div>
+
+</section></body><p>
+
+</p>
+
+<p></p>
+
+</html>

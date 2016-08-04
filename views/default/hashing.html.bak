@@ -1,0 +1,35 @@
+{{extend 'layout.html'}}
+
+<h2>
+    Hash Functions
+</h2>
+
+<p>
+    <b>Hash functions are mathematical algorithms that map a string of any size to a fixed length string of seemingly random hexadecimal characters.
+    <br>No matter the size of the input string, it will always output a string of a fixed size based on the algorithm used. For example, the MD5 hash 
+    <br>function always outputs a string of size 128 bits, or 32 hex characters. Hash functions create a many to one scheme making them practically
+    <br> irreversable. However, the longer a hash function is used, the more likely it is to be cracked. This is because all of its possible outputs
+    <br> start to reveal collisions in the hash function. In 2004, it was found that MD5 was not collision resistance. A collision is defined as
+    <br> when two completely different inputs create the same output. Given the fact that MD5 is only 128 bits, and has been around since 1992,
+    <br> people have found multiple collisions for MD5. This means it is no longer cryptographically secure.</b>
+</p>
+
+<p>
+    <b>        All properly secure webpages and databases must use the SHA-2 hash function now. The digest sizes for SHA-2 include 224, 256, 384, and 512 bits
+    <br> This makes it much more collision resistant. If you somehow find out that a website is using MD5, try to avoid it if possible, and definitely
+    <br> don't give it a common password that you use or any sensitive information.</b>
+</p>
+
+<h2>
+    SSL/TLS
+</h2>
+
+<p>
+    <b>Transport Layer Security which has replaced Secure Socket Layer, are both commonly referred to as SSL interchangeably. SSL is the most common form of encryption
+    <br> that an internet user will see on a daily basis. It is literally what the 's' in "https" stands for. Everytime you see "https" in your browser, it is encrypting 
+    <br> your information using SSL. This is a valuable and important thing because it means you can have the luxury of online banking and ordering whatever you want off of Amazon
+    <br> without having to worry about someone stealing your credit card information. Without it, these services would cease to exist as they would no longer be viable.
+    <br> It is also used for email, VoIP programs such as Skype, and even popular websites such as YouTube and Facebook. This absolutely necessary due to how unsecure
+    <br> Wi-Fi is. Anyone with Kali Linux and a wireless network interface controller can "sniff" a nearby wireless access point and obtain information from anyone using
+    <br> that access point. However, thanks to SSL, and other forms of encryption, that information is not human-readable, and they won't be able to obtain personal information.</b>
+</p>

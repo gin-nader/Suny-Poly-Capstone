@@ -1,0 +1,19 @@
+{{extend 'layout.html'}}
+
+<h2>
+    Unsecure Database Form
+</h2>
+
+<p>
+    <b>This is an example of a unsecure form that is connected to a database. The first thing you should note is that it does not start with "https://".
+    <br>This means it is not using SSL to encrypt the information you type in. In other words, anything you type in here will be stored in plaintext.
+    <br>So, whoever owns the database linked to this website will easily be able to see any information you type in here.
+    <br>Once again, please use fake information.</b>
+</p>
+
+
+{{=form}}
+
+<p>
+    <br><b>Learn more about SSL encryption by clicking <a href='hashing'>here</a>.</b>
+</p>

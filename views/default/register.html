@@ -1,0 +1,24 @@
+{{extend 'layout.html'}}
+
+<div id="reset_password">
+
+<p align="center">
+            <Strong>Please register an email and password, so that you can begin using our website.<br>
+               It does not have to a be a real email, and for your own sake, do not use a password that you commonly use.</Strong>
+    </p>
+
+     <p align="center">
+               <strong><br><br>It is a good idea to use a passphrase instead of a password.<br> For example, the passphrase "correcthorsebatterystaple"
+                compared to Tr0ub4dor&amp3.<br> Not only is the passphrasse easier to remember, but it is actually more secure.<a href="https://xkcd.com/936/"> Relevant xkcd.</a></strong>
+              </p>
+
+{{=form}}
+
+
+
+    <div>
+        <center><Strong>*Notice: while this website is generous enough to not display your password in plaintext here, IT IS ACTUALLY STORING YOUR PASSWORD IN THE DATABASE IN PLAINTEXT.<br>
+         Every secure website will at least hash your password before storing it in a database, except for MD5 hashing. MD5 is almost as bad as being displayed in plaintext because MD5 can 
+         <br>be easily cracked. To learn more about MD5 and how hash functions work, <a href='hashing'>click here</a>.</Strong></center>
+    </div>
+</div>
